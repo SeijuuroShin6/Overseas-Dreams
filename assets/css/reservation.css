@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, header {
+  background-color:  white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  border-bottom: solid 1px transparent;
+}
+
+
+/*Nav Bar*/
+#nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: whitesmoke;
+  color: #000000;
+  position: fixed;
+  top: 0;
+  height: 6em;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  left: 3em;
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 700;
+}
+
+#menu-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  position: absolute;
+  right: 0;
+  align-items: center;
+}
+
+.menu-links {
+  margin-right: 3em;
+  font-size: .85em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#log-button {
+  background-color: #000000;
+  color: whitesmoke;
+  border-radius: 1em;
+  padding: 13px 15px;
+  text-align: center;
+}
+
+#log-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#icon {
+  padding-right: .4em;
+}
+/*End Of Nav Bar*/
+
+
+
+#search-img-container {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/Reserv.jpg');
+  height: 25em;
+  margin-top: 9em;
+  margin-bottom: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  border-radius: 2em;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+#reserv {
+  position: absolute;
+  bottom: .5em;
+  left: 1em;
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+#calendar-icon {
+  padding-left: .3em;
+}
+
+#input-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 32.5em;
+  left: 10em;
+  right: 10em;
+  gap: .4em;
+}
+
+
+input, select {
+  padding: 13px 15px;
+  border-radius: .4em;
+  background-color: whitesmoke;
+  height: 3em;
+  width: 13em;
+  border: none;
+  outline: none;
+  font-size: .85em;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+select {
+  appearance: none;
+}
+
+option {
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: lightgray;
+}
+
+select:hover {
+  background-color: lightgray;
+}
+
+input:focus {
+  text-transform: capitalize;
+}
+
+
+#search-button {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 20em;
+  height: 3em;
+  color: white;
+  background-color: #1F75FE;
+  padding: 13px 15px;
+  border-radius: 1em;
+  border: none;
+  font-weight: 700;
+  font-size: 1em;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#search-icon {
+  font-size: 2em;
+}
+
+#search-button:hover {
+  background-color: white;
+  color: #000000;
+  box-shadow: 0px 2px 15px 5px inset lightgray;
+}
+
+
+#offer-departure-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+h2 {
+  margin-left: 3.5em;
+}
+
+#departure {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  padding-right: 5em;
+}
+
+#content-departure {
+  padding-right: .6em;
+}
+
+
+#button-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  padding-left: 4em;
+  padding-top: 2em;
+}
+
+.filter-button {
+  border-radius: 6em;
+  padding: 13px 15px;
+  background-color: whitesmoke;
+  font-weight: 700;
+  color: black;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.filter-button-active {
+  background-color: #000000;
+  color: whitesmoke;
+  border-radius: 6em;
+  padding: 13px 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.filter-button:hover {
+  background-color: #000000;
+  color: whitesmoke;
+}
+
+#icon-pricing {
+  padding-right: .3em;
+}
+
+#rate-icon {
+  padding-right: .3em;
+}
+
+#time-icon {
+  padding-right: .3em;
+}
+
+
+
+#grid-container {
+  height: 90em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5em;
+  margin-bottom: 20em;
+  gap: 3em;
+}
+
+.show {
+  display: block;
+}
+
+.grids {
+  height: 20em;
+  width: 25em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 13px lightgray;
+  box-shadow: 0 0 13px lightgray;
+  background-color: whitesmoke;
+  display: block;
+  cursor: pointer;
+}
+
+h3 {
+  font-family: Bebas Neue;
+  letter-spacing: .1em;
+  position: absolute;
+  bottom: .7em;
+  left: .5em;
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+#rating {
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  font-weight: 700;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: whitesmoke;
+  font-size: 1.4em;
+}
+
+#star {
+  color: #FFD700;
+}
+
+span {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 1em;
+  padding-right: .2em;
+}
+
+#grid-content {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+  justify-content: space-between;
+}
+
+#hotel {
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  padding-left: 1em;
+  font-weight: 500;
+}
+
+#duration {
+  color: lightslategray;
+  padding-right: .5em;
+}
+
+
+#one {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Asia-Cities/Shanghai.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: transform .5s;
+}
+
+#two {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Europe-Cities/Reykjavik.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: transform .5s;
+}
+
+#three {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Africa-Cities/Ifrane.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: transform .5s;
+}
+
+#four {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/MiddleEast-Cities/Mascate.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: transform .5s;
+}
+
+#five {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Na-Cities/Vancouver.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: transform .5s;
+}
+
+#six {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Oceania-Cities/Queenstown.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: transform .5s;
+}
+
+#seven {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Sa-Cities/Valparaíso.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: 500ms ease-in; 
+  transition: transform .5s;
+}
+
+#eight {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Asia-Cities/Tokyo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: 500ms ease-in; 
+  transition: transform .5s;
+}
+
+#nine {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)), url('/assets/img/Europe-Cities/Portofino.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 17em;
+  position: relative;
+  transition: 500ms ease-in; 
+  transition: transform .5s;
+}
+ 
+
+
+#one:hover {
+  transform: scale(1.03);
+}
+#two:hover {
+  transform: scale(1.03);
+}
+#three:hover {
+  transform: scale(1.03);
+}
+#four:hover {
+  transform: scale(1.03);
+}
+#five:hover {
+  transform: scale(1.03);
+}
+#six:hover {
+  transform: scale(1.03);
+}
+#seven:hover {
+  transform: scale(1.03);
+}
+#eight:hover {
+  transform: scale(1.03);
+}
+#nine:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+footer {
+  background-color: whitesmoke;
+  height: 35em;
+  width: 100%;
+  color:#000000;
+  position: relative;
+}
+
+#nav-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10em;
+  padding-top: 3em;
+}
+
+h4 {
+  padding-bottom: 2em;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+}
+
+li {
+  margin-top: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover {
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-bottom: 1em;
+  transition: all 0.2s ease-in;
+  transform-origin: bottom right;
+}
+
+#Conditions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 7em;
+}
+
+#Siège {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 5em;
+}
+
+.adress {
+  line-height: 2.5em;
+}
+
+#Sm-Pymt-Container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 10em;
+  gap: 1.5em;
+}
+
+#sm-title {
+  padding-left: .8em;
+}
+
+#sm {
+  font-size: 2.5em;
+  padding-left: .3em;
+  cursor: pointer;
+}
+
+#Payments-Container {
+  padding-top: 1em;
+  padding-left: .4em;
+}
+
+#pm-title {
+  padding-left: .4em;
+  padding-bottom: 1em;
+}
+#pm {
+  cursor: pointer;
+}
+
+#rights {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1.5em;
+  left: 10em;
+}
+#rights-text {
+  font-size: .8em;
+}

@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, header {
+  background-color:  white;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  border-bottom:solid 1px transparent;
+
+}
+
+
+
+/*Nav Bar*/
+#nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: whitesmoke;
+  color: #000000;
+  position: fixed;
+  top: 0;
+  height: 6em;
+  width: 100%;
+  z-index: 2;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  left: 3em;
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 700;
+}
+
+#menu-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  position: absolute;
+  right: 0;
+  align-items: center;
+}
+
+.menu-links {
+  margin-right: 3em;
+  font-size: .85em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#log-button {
+  background-color: #000000;
+  color: whitesmoke;
+  border-radius: 1em;
+  padding: 13px 15px;
+  text-align: center;
+}
+
+#log-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#icon {
+  padding-right: .4em;
+}
+/*End Of Nav Bar*/
+
+
+#first-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+
+#title-slogan-container {
+  display: table;
+  justify-content: end;
+  align-items: center;
+  height: 40em;
+  width: 40%;
+  margin-top: 10em;
+  margin-left: 3em;
+  color: black;
+  position: relative;
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+#slogan {
+  font-size: 2em;
+  font-weight: 600;
+  padding-top: 1.5em;
+}
+
+#oceania-icon {
+  position: absolute;
+  top: 18em;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  border-radius: 3em;
+  padding: 4em;
+  margin-right: 2em;
+  margin-top: -4em;
+}
+
+.img-card {
+  width: 15em;
+  height: 34em;
+  border-radius: 0em 0em 1em 1em;
+}
+
+#one {
+  background: url(/assets/img/Oceania-Cities/\ Canberra.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#two {
+  background: url(/assets/img/Oceania-Cities/Suva.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#three {
+  background: url(/assets/img/Oceania-Cities/Koror.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+#second-container {
+  display: flex;
+  flex-direction: column;
+  height: 180em;
+}
+
+#content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 1.8em;
+  padding-left: 13em;
+  padding-right: 15em;
+  padding-top: 5em;
+  font-weight: 700;
+  font-size: 1em;
+  overflow: visible;
+}
+
+
+
+#grid-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10em;
+  overflow: hidden;
+}
+
+
+
+#middle-grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  height: 45em;
+  margin-top: -13em;
+}
+
+#middle-city-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
+}
+
+#title-card {
+  font-family: "Bebas Neue", sans-serif;
+  color: whitesmoke;
+  position: absolute;
+  bottom: .1em;
+  left: .3em;
+  font-size: 4em;
+}
+
+#middle-city-content {
+  height: 15em;
+  width: 30em;
+  background-color: whitesmoke;
+  transition: transform .5s ease-in-out;
+  border-radius: 1em;
+  position: absolute;
+  top: 3%;
+  overflow: visible;
+}
+
+.text-content-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2em;
+  left: 1.5em;
+  gap: .7em;
+}
+
+.info-city {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 1em;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+.peoples-icon {
+  padding-right: .5em;
+}
+.map-icon {
+  padding-right: .5em;
+}
+
+.content-city {
+  font-size: .9em;
+  font-weight: 500;
+  color: grey;
+  text-align: left;
+  padding-right: .4em;
+}
+
+
+
+#middle-arrow {
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+  padding-top: 4em;
+  font-size: 3em;
+  color: white;
+}
+
+
+#middle-city-content:hover {
+  transform: translateY(180px);
+}
+
+#one-city {
+  background: url(/assets/img/Oceania-Cities/Queenstown.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#two-city {
+  background: url(/assets/img/Oceania-Cities/Perth.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#three-city {
+  background: url(/assets/img/Oceania-Cities/Pape’ete.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#four-city {
+  background: url(/assets/img/Oceania-Cities/Pago\ Pago.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#five-city {
+  background: url(/assets/img/Oceania-Cities/Outback.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#six-city {
+  background: url(/assets/img/Oceania-Cities/Nuku\'alofa.webp);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#seven-city {
+  background: url(/assets/img/Oceania-Cities/Manly.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#eight-city {
+  background: url(/assets/img/Oceania-Cities/Koror.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#nine-city {
+  background: url(/assets/img/Oceania-Cities/Suva.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+#ten-city {
+  background: url(/assets/img/Oceania-Cities/\ Canberra.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12em;
+  width: 30em;
+  z-index: 1;
+  position: relative;
+  border-radius: 1em;
+}
+
+
+
+
+
+#third-container {
+  padding-bottom: 30em;
+}
+
+
+
+.continent-title {
+  font-size: 5em;
+  position: absolute;
+  color: whitesmoke;
+  bottom: .6em;
+  left: .4em;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#destinations-continent-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#destination-continent-title {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+#three-first-destination-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5em 5em 2em 5em;
+  gap: 1em;
+}
+
+#three-second-destination-container {
+  display: flex;
+  flex-direction: row;
+  padding: 13em 5em 2em 5em;
+  gap: 1em;
+}
+
+
+
+#cards-one {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/Europe.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 18em;
+  width: 30em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 6px lightgray;
+  transition: 500ms ease-in; 
+  transition: all .6s ease-in;
+}
+#cards-one:hover {
+  overflow: hidden;
+  transition: all 500ms ease-out; 
+  box-shadow: 0 0 2px 2px #4B6F44;
+  transition: all .5s ease-out;
+  transform: scale(.9);
+}
+
+
+#cards-two {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/Asie.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 18em;
+  width: 30em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 6px lightgray;
+  transition: 500ms ease-in; 
+  transition: all .6s ease-in;
+}
+#cards-two:hover {
+  overflow: hidden;
+  transition: all 500ms ease-out; 
+  box-shadow: 0 0 2px 2px #eec0c8;
+  transition: all .5s ease-out;
+  transform: scale(.9);
+}
+
+
+#cards-three {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/NA.webp');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 18em;
+  width: 30em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 6px lightgray;
+  transition: 500ms ease-in; 
+  transition: all .6s ease-in;
+}
+#cards-three:hover {
+  overflow: hidden;
+  transition: all 500ms ease-out; 
+  box-shadow: 0 0 2px 2px #7CB9E8;
+  transition: all .5s ease-out;
+  transform: scale(.9);
+}
+
+
+#cards-four {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/Moyen\ Orient.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 18em;
+  width: 30em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 6px lightgray;
+  transition: 500ms ease-in; 
+  transition: all .6s ease-in;
+}
+#cards-four:hover {
+  overflow: hidden;
+  transition: all 500ms ease-out; 
+  box-shadow: 0 0 2px 2px #DEB887;
+  transition: all .5s ease-out;
+  transform: scale(.9);
+}
+
+
+#cards-five {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/Afrique.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 18em;
+  width: 30em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 6px lightgray;
+  transition: 500ms ease-in; 
+  transition: all .6s ease-in;
+}
+#cards-five:hover {
+  overflow: hidden;
+  transition: all 500ms ease-out; 
+  box-shadow: 0 0 2px 2px #EC5800	;
+  transition: all .5s ease-out;
+  transform: scale(.9);
+}
+
+
+#cards-six {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 5%, rgba(0,0,0,1)), url('/assets/img/SA.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 18em;
+  width: 30em;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 6px lightgray;
+  transition: 500ms ease-in; 
+  transition: all .6s ease-in;
+}
+#cards-six:hover {
+  overflow: hidden;
+  transition: all 500ms ease-out; 
+  box-shadow: 0 0 2px 2px #B87333;
+  transition: all .5s ease-out;
+  transform: scale(.9);
+}
+
+
+
+
+
+
+.button-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+button {
+  margin-top: 2em;
+  padding: 13px 15px;
+  background-color: #1F75FE;
+  color: white;
+  border-radius: 5em;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .3em;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#eu-button, #me-button {
+  position: absolute;
+  left: 13em;
+}
+
+#as-button, #af-button {
+  position: absolute;
+  left: 41em;
+}
+
+#na-button, #sa-button {
+  margin-left: 55em;
+}
+
+
+
+footer {
+  background-color: whitesmoke;
+  height: 35em;
+  width: 100%;
+  color:#000000;
+  position: relative;
+}
+
+#nav-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10em;
+  padding-top: 3em;
+}
+
+h4 {
+  padding-bottom: 2em;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+}
+
+li {
+  margin-top: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover {
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-bottom: 1em;
+  transition: all 0.2s ease-in;
+  transform-origin: bottom right;
+}
+
+#Conditions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 7em;
+}
+
+#Siège {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 5em;
+}
+
+.adress {
+  line-height: 2.5em;
+}
+
+#Sm-Pymt-Container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 10em;
+  gap: 1.5em;
+}
+
+#sm-title {
+  padding-left: .8em;
+}
+
+#sm {
+  font-size: 2.5em;
+  padding-left: .3em;
+  cursor: pointer;
+}
+
+#Payments-Container {
+  padding-top: 1em;
+  padding-left: .4em;
+}
+
+#pm-title {
+  padding-left: .4em;
+  padding-bottom: 1em;
+}
+#pm {
+  cursor: pointer;
+}
+
+#rights {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1.5em;
+  left: 10em;
+}
+#rights-text {
+  font-size: .8em;
+}

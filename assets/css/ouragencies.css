@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+}
+
+body, header {
+  background-color:  white;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  border-bottom:solid 1px transparent;
+}
+
+
+/*Nav Bar*/
+#nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: whitesmoke;
+  color: #000000;
+  position: fixed;
+  top: 0;
+  height: 6em;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  left: 3em;
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 700;
+}
+
+#menu-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  position: absolute;
+  right: 0;
+  align-items: center;
+}
+
+.menu-links {
+  margin-right: 3em;
+  font-size: .85em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#log-button {
+  background-color: #000000;
+  color: whitesmoke;
+  border-radius: 1em;
+  padding: 13px 15px;
+  text-align: center;
+}
+
+#log-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#icon {
+  padding-right: .4em;
+}
+/*End Of Nav Bar*/
+
+
+
+#our-agencies-title-container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  overflow: visible;
+}
+
+#img-container {
+  background-image: url(/assets/img/ouragencies-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 26em;
+  width: 100%;
+  border-radius: 2em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#text-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+#title-img-container {
+  font-size: 5em;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+
+
+#content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20em 10em 5em 9em;
+}
+
+#content {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+
+
+#big-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 13em;
+}
+
+#our-agencies-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25em;
+  margin-left: 10em;
+  margin-right: 10em;
+  background: url(/assets/img/ouragencies-bg2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 2em; 
+}
+
+
+#container-location-agencies {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10em;
+  margin-right: 10em;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  border-bottom-left-radius:2em;
+  border-bottom-right-radius:2em;
+  background-color: #FAF9F6;
+  height: 35em;
+  margin-top: -4em;
+}
+
+h2 {
+  font-weight: 500;
+  position: absolute;
+  top: 1.5em;
+  left: 2em;
+}
+
+#cards-location-container {
+  padding-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+h3 {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  color: whitesmoke;
+}
+
+#first-card-location {
+  position: relative;
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Tokyo-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#second-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Shanghai-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#third-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Sao\ Paulo-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#fourth-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Mexico\ City-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#fifth-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Le\ Caire-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#sixth-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Beijing-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#seventh-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/New\ York-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#eight-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/BuenosAires-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#ninenth-card-location {
+  height: 12em;
+  width: 12em;
+  background-color: white;
+  border-radius: 2em;
+  background: url(/assets/img/Istanbul-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#tenth-card-location {
+  height: 12em;
+  width: 12em;
+  background: white;
+  border-radius: 2em;
+  background: url(/assets/img/Jakarta-ourA.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+
+
+
+#about-contact-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20em;
+}
+
+#title-about-contact {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+#button-links { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 5em;
+}
+
+.info-contact-links {
+  text-align: center;
+  border-radius: 6em;
+  background-color: #000000;
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 10px 15px;
+  width: 11em;
+  display: flex;
+  align-items: center;
+}
+
+#info {
+  padding-left: 2em;
+}
+
+#info-icon {
+  padding-right: .4em;
+  font-size: 1.2em;
+}
+
+#contact-icon {
+  padding-right: .5em;
+}
+
+.info-contact-links:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+
+
+footer {
+  background-color: whitesmoke;
+  height: 35em;
+  width: 100%;
+  color:#000000;
+  position: relative;
+}
+
+#nav-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10em;
+  padding-top: 3em;
+}
+
+h4 {
+  padding-bottom: 2em;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+}
+
+li {
+  margin-top: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover {
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-bottom: 1em;
+  transition: all 0.2s ease-in;
+  transform-origin: bottom right;
+}
+
+#Conditions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 7em;
+}
+
+#Siège {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 5em;
+}
+
+.adress {
+  line-height: 2.5em;
+}
+
+#Sm-Pymt-Container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-left: 10em;
+  gap: 1.5em;
+}
+
+#sm-title {
+  padding-left: .8em;
+}
+
+#sm {
+  font-size: 2.5em;
+  padding-left: .3em;
+  cursor: pointer;
+}
+
+#Payments-Container {
+  padding-top: 1em;
+  padding-left: .4em;
+}
+
+#pm-title {
+  padding-left: .4em;
+  padding-bottom: 1em;
+}
+#pm {
+  cursor: pointer;
+}
+
+#rights {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1.5em;
+  left: 10em;
+}
+#rights-text {
+  font-size: .8em;
+}

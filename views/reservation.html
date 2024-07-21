@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/reservation.css">
+  <script src="/assets/js/script.js"></script>
+</head>
+<header>
+<nav id="nav-menu"> 
+
+<div id="logo-container">
+<a href="/index.html">    
+<img src="/assets/img/Overseas Dreams Logo.svg" height="50" width="50"></a>  
+<p id="logo">OverSeas Dreams</p>
+</div> 
+
+
+<div id="menu-links-container">
+
+   <a class="menu-links" href="/views/destination.html"><ion-icon id="icon" name="airplane"></ion-icon>Destinations</a>
+   <a class="menu-links" href="/views/reservation.html"><ion-icon id="icon" name="calendar"></ion-icon>Réservations</a>
+   <a class="menu-links" href="/views/ouragencies.html"><ion-icon id="icon" name="business"></ion-icon>Nos Agences</a>
+
+   <a id="log-button" class="menu-links" href="/views/account.html"><ion-icon id="icon" name="person"></ion-icon>Login / Sign</a>
+
+</div>
+
+</nav>
+</header>
+
+
+
+
+
+<body>
+<div id="search-img-container">
+  <p id="reserv">Réservations <ion-icon id="calendar-icon" name="calendar"></ion-icon></p>
+</div>
+
+<div id="input-search-container"> 
+ <input type="text" placeholder="Rechercher...">
+ <input type="date">
+ <input type="date">
+ 
+ <select>
+<option value="">Horaires</option>
+<option>8H00</option>
+<option>8H30</option>
+<option>9H00</option>
+<option>9H30</option>
+<option>10H00</option>
+<option>10H30</option>
+<option>11H00</option>
+<option>11H30</option>
+<option>12H00</option>
+<option>12H30</option>
+<option>13H00</option>
+<option>13H30</option>
+ </select>
+
+ <select>
+  <option>Adultes</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+ </select>
+
+
+ <select>
+  <option>Enfants</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+ </select>
+
+<button id="search-button" type="submit">Rechercher<ion-icon id="search-icon" name="search"></ion-icon></button>
+
+</div>
+
+
+
+<div id="offer-departure-container"> 
+<h2>Nos offres du moment</h2>
+
+<div id="departure"> 
+<p id="content-departure">Au départ de :</p> 
+<select>
+  <option>Paris (CDG)</option>
+  <option>Paris (Orly)</option>
+  <option>Marseille</option>
+  <option>Saint-Etienne</option>
+  <option>Bordeaux</option>
+  <option>Toulouse</option>
+</select>
+
+</div>
+
+</div>
+
+<div id="button-filter-container">
+  <button onclick="filterSelection('all')" class="filter-button-active" type="button"><ion-icon id="time-icon" name="flame"></ion-icon> Nos dernières offres</button>
+  <button onclick="filterSelection('best ratings')" class="filter-button" type="button"><ion-icon id="rate-icon" name="star-half"></ion-icon>Les mieux notés</button>
+  <button onclick="filterSelection('ascending order')" class="filter-button" type="button"><ion-icon id="icon-pricing" name="pricetag"></ion-icon>Ordres Croissant</button>
+  <button onclick="filterSelection('descending order')" class="filter-button" type="button"><ion-icon id="icon-pricing" name="pricetags"></ion-icon>Ordres Décroissant</button>
+  <button onclick="filterSelection('most recent')" class="filter-button" type="button"><ion-icon id="time-icon" name="timer"></ion-icon> Les plus récents</button>
+</div>
+
+
+
+<div id="grid-container"> 
+
+<div data-aos="fade-up" class="grids">
+  <div id="one">
+    <h3>Shanghai</h3>
+    <p id="rating">3.6 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 789 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Amanyangyun</p>
+    <p id="duration">3 Jours - 2 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+<div data-aos="fade-up" class="grids">  
+  <div id="two">
+    <h3>Reykjavik</h3>
+    <p id="rating">4.1 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 648 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>TORFHÚS RETREAT</p>
+    <p id="duration">2 Jours - 1 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="three">
+    <h3>Ifrane</h3>
+    <p id="rating">4.6 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 255 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Michlifen Resort</p>
+    <p id="duration">1 Jours - 1 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="four">
+    <h3>Mascate</h3>
+    <p id="rating">3.9 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 454 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Jumeirah Muscat Bay</p>
+    <p id="duration">4 Jours - 3 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="five">
+    <h3>Vancouver</h3>
+    <p id="rating">4 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 577 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Pan Pacific Vancouver</p>
+    <p id="duration">2 Jours - 2 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="six">
+    <h3>Queenstown</h3>
+    <p id="rating">4.8 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 789 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Rosewood Matakauri</p>
+    <p id="duration">1 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="seven">
+    <h3>Valparaíso</h3>
+    <p id="rating">4.2 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 940 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Sheraton Miramar</p>
+    <p id="duration">2 Jours - 1 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="eight">
+    <h3>Tokyo</h3>
+    <p id="rating">4.4 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 872 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>The Okura Tokyo</p>
+    <p id="duration">2 Jours - 2 Nuits / Pers.</p>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" class="grids">
+  <div id="nine">
+    <h3>Portofino</h3>
+    <p id="rating">4.5 / 5 <ion-icon id="star" name="star"></ion-icon></p>  
+    <span>Dès 1 110 € TTC </span>  
+  </div>
+  <div id="grid-content">
+    <p id="hotel"><ion-icon name="bed"></ion-icon>Splendido Mare, Blm</p>
+    <p id="duration">4 Jours - 3 Nuits / Pers.</p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+<footer>
+<nav id="nav-footer">
+
+<div id="About">
+<h4>À Propos</h4>
+<ul>
+<li>FAQ</li>
+<li>Catalogue</li>
+<li>Nos Agences</li>
+<li>Plan Du Site</li>
+<li>Nous Rejoindre</li>
+</ul>
+</div>
+
+
+<div id="Conditions">
+<h4>Conditions</h4>
+<ul>
+<li>Politiques de confidentialité</li>
+<li>Mentions légales</li>
+<li>Paramètres des cookies</li>
+<li>Protections des données</li>
+<li>Conditions générales de ventes</li>
+</ul>
+</div>
+
+
+<div id="Siège">
+<h4>Siège</h4>
+<p class="adress">Rue Säbener Straße 51-57</p>
+<p class="adress">81547, München</p>
+<p class="adress">Allemagne</p>
+</div>
+
+
+
+<div id="Sm-Pymt-Container"> 
+
+<div id="Social-Media-Container">
+<h4 id="sm-title">Nos Réseaux Sociaux</h4>
+<ion-icon id="sm" name="logo-instagram" aria-hidden="true"></ion-icon></a>
+<ion-icon id="sm" name="logo-twitter" aria-hidden="true"></ion-icon></a>
+<ion-icon id="sm" name="logo-snapchat" aria-hidden="true"></ion-icon></a>
+<ion-icon id="sm" name="logo-youtube" aria-hidden="true"></ion-icon></a>
+<ion-icon id="sm" name="logo-tiktok" aria-hidden="true"></ion-icon></a>
+</div>
+
+
+<div id="Payments-Container">
+<h4 id="pm-title">Modalité de paiements</h4>
+<img id="pm" class="payment-icons" src="/assets/icons/visa-svgrepo-com.svg" height="60" width="70">
+<img id="pm" class="payment-icons" src="/assets/icons/paypal-logo-svgrepo-com.svg" height="60" width="70">
+<img id="pm" class="payment-icons" src="/assets/icons/apple-pay-svgrepo-com.svg" height="60" width="70">
+<img id="pm" class="payment-icons" src="/assets/icons/mastercard-svgrepo-com.svg" height="60" width="70">
+</div>
+
+</div>
+
+</nav>
+<div id="rights"> 
+<p id="rights-text">Copyright © | Tous droits réservés - Seijuuro Jin Sama Sakai Shin Productions 2023 ®</p>
+</div>
+</footer>
+</html>

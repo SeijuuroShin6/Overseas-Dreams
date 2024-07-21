@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, header {
+  background-color:  white;
+}
+
+.custom-shape-divider-top-1718065548 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1718065548 svg {
+    position: relative;
+    display: block;
+    width: calc(201% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1718065548 .shape-fill {
+    fill: #000000;
+}
+
+
+
+
+
+
+
+
+#accounts-form-container {
+  display: flex;
+}
+
+
+
+
+
+#login-form-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 37em;
+  width: 35em;
+  background-color: #faf9f9;
+  position: absolute;
+  left: 0;
+  border-top-right-radius:3em;
+  border-bottom-right-radius:3em;
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.h2 {
+  color:#000000;
+  text-align: center;
+}
+
+#login-form {
+  padding-left: 5em;
+  padding-top: 2em;
+}
+
+.email-log-label, .password-log-label {
+  padding-left: .4em;
+}
+
+.email-log-input, .password-log-input, #sub {
+  border-radius: 6em;
+  background-color: white;
+  border: none;
+  width: 80%;
+  padding: 10px 15px;
+  margin-top: .6em;
+}
+
+#forgot-password {
+  font-size: .7em;
+  padding-top: 1em;
+  padding-left: .6em;
+}
+
+#forgot-password:hover {
+  background: none;
+  color: #000000;
+}
+
+#label-input-container-log-in {
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#remember-container {
+  position: absolute;
+  right: 3em;
+  top: 17em;
+  padding-right: 3em;
+  display: flex;
+  gap: .3em;
+  align-items: center;
+}
+
+#remember-txt {
+  font-size: .7em;
+}
+
+#sub {
+  background-color: #000000;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 10em;
+  margin-left: 10em;
+}
+
+#sub:hover {
+  background-color: white;
+  color: #000000;
+}
+
+input:focus {
+  outline: none;
+}
+
+#underline {
+  height: .2em;
+  background-color:  #000000;
+  margin-top: 1.5em;
+  margin-left: 5em;
+  width: 50%;
+}
+
+#login-ways {
+  padding-top: 1em;
+  text-align: center;
+  padding-right: 5em;
+}
+
+#login-ways-icons-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5em;
+  padding-top: 1em;
+  gap: 1em;
+}
+
+#ion-icon {
+  margin-right: .5em;
+}
+
+#apple-login {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1em;
+  border-radius: 6em;
+  background-color: #000000;
+  color: white;
+  width: 60%;
+  padding: .8em;
+}
+
+#google-login {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1em;
+  border-radius: 6em;
+  background-color: #000000;
+  color: white;
+  width: 60%;
+  padding: .8em;
+}
+
+#apple-login:hover, #google-login:hover {
+   background-color: white;
+   color: #000000;
+   border: none;
+   box-shadow: 1px 10px 10px -3px lightgray inset;
+}
+
+
+
+
+
+
+#sign-in-form-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 37em;
+  width: 35em;
+  background-color: #000000;
+  position: absolute;
+  right: 0;
+  border-top-left-radius:3em;
+  border-bottom-left-radius:3em;
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+h2 {
+  color: white;
+  padding-top: 2em;
+  text-align: center;
+}
+
+#sign-in-form {
+  padding-top: 1.5em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.labels-sign-in {
+  color: white;
+  float: left;
+  padding-left: 1em;
+}
+
+.inputs-sign-in {
+  border-radius: 6em;
+  background-color: white;
+  border: none;
+  width: 95%;
+  padding: 10px 15px;
+  margin-top: .6em;
+}
+
+#label-input-container-sign-in {
+  margin-bottom: 1em;
+}
+
+#log {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  width: 12em;
+  border-radius: 6em;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 2em;
+}
+
+#log:hover {
+  background-color: #000000;
+  color: whitesmoke;
+}
+
+#log:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+#return-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23em;
+}
+
+#home {
+  width: 100%;
+}
+
+.home-button {
+  border-radius: 6em;
+  padding: 10px 12px;
+  width: 10%;
+  border: 2px solid black;
+  margin-left: .5em;
+  background: transparent;
+  text-align: center;
+}
+
+.mentions-container {
+  position: absolute;
+  bottom: 10px;
+  padding-left: 38.5em;
+  display: flex;
+  gap: 1em;
+}
+
+#mentions-links {
+  color: lightgray;
+  text-decoration: underline;
+  font-size: .8em;
+}
